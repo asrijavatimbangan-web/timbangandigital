@@ -45,7 +45,7 @@
             <div class="flex items-center mb-10 gap-4">
                 <h2 class="text-3xl font-black italic uppercase tracking-wider text-slate-800">Merk ALEXA</h2>
                 <div class="h-[2px] flex-grow bg-blue-600"></div>
-                <span class="text-blue-600 font-bold text-sm">STAINLESS SERIES</span>
+                <span class="text-blue-600 font-bold text-sm">PILIHAN TERBAIK</span>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="container-alexa"></div>
         </section>
@@ -54,7 +54,7 @@
             <div class="flex items-center mb-10 gap-4">
                 <h2 class="text-3xl font-black italic uppercase tracking-wider text-slate-800">Merk DAIJIN</h2>
                 <div class="h-[2px] flex-grow bg-orange-500"></div>
-                <span class="text-orange-500 font-bold text-sm">WATERPROOF SERIES</span>
+                <span class="text-orange-500 font-bold text-sm">PILIHAN PALING AMAN</span>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="container-daijin"></div>
         </section>
@@ -63,7 +63,7 @@
             <div class="flex items-center mb-10 gap-4">
                 <h2 class="text-3xl font-black italic uppercase tracking-wider text-slate-800">Merk RENKMHE</h2>
                 <div class="h-[2px] flex-grow bg-green-600"></div>
-                <span class="text-green-600 font-bold text-sm">BEST VALUE</span>
+                <span class="text-green-600 font-bold text-sm">PILIHAN EKONOMIS</span>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4" id="container-renkmhe"></div>
         </section>
@@ -89,22 +89,22 @@
         // 1. DATA PRODUK - SILAKAN GANTI HARGA & LINK FOTO DI SINI
         const data = {
             alexa: [
-                {cap: '150kg', price: '2.699.000', old: '2.900.000', img: 'https://drive.google.com/file/d/1QKNynmsLSFtoxI4WFDPWGO5ysMnXvCBa/view?usp=drive_link', tag: 'Stainless'},
-                {cap: '300kg', price: '3.199.000', old: '3.650.000', img: 'https://drive.google.com/file/d/1zTC2nKxvqGtkaMwPDaeXeYSAlRqmcDV7/view?usp=drive_link', tag: 'Bordess'},
-                {cap: '600kg', price: '3.350.000', old: '3.700.000', img: 'https://drive.google.com/file/d/1eT20-4uNjBGuKxyq8B5vp7Low-2ZGVDG/view?usp=drive_link', tag: 'Bordess'}
+                {cap: '150kg', price: '2.699.000', old: '2.900.000', img: 'img/alexatma150.jpg', tag: 'Stainless'},
+                {cap: '300kg', price: '3.199.000', old: '3.650.000', img: 'img/alexatmrb300.jpg', tag: 'Bordess'},
+                {cap: '600kg', price: '3.350.000', old: '3.700.000', img: 'img/alexatmrb600.jpg', tag: 'Bordess'}
             ],
             daijin: [
-                {cap: '40kg', price: '445.000', old: '550.000', img: 'https://drive.google.com/file/d/1qpqKjEtksd6-K61gL8mKTgANmRo4olp1/view?usp=drive_link', tag: ''},
-                {cap: '100kg', price: '950.000', old: '1.100.000', img: 'https://drive.google.com/file/d/1OxNhLI-Re9T3jpE_AJAUAfoboEZdn-PV/view?usp=drive_link', tag: 'Bordess'},
-                {cap: '150kg', price: '1.350.000', old: '1.550.000', img: 'https://drive.google.com/file/d/1JDWhnvrrkDn7hn_jsTHbMCldnpj5ZaUs/view?usp=drive_link', tag: 'Bordess'},
-                {cap: '300kg', price: '1.700.000', old: '1.950.000', img: 'https://drive.google.com/file/d/1k5bMwc1g8Qav2lN8IYcF5bFfugKb0Inj/view?usp=drive_link', tag: 'Bordess'}
+                {cap: '40kg', price: '445.000', old: '550.000', img: 'img/daijin40.jpg', tag: ''},
+                {cap: '100kg', price: '950.000', old: '1.100.000', img: 'img/daijin100.jpg', tag: 'Bordess'},
+                {cap: '150kg', price: '1.350.000', old: '1.550.000', img: 'img/daijin150.jpg', tag: 'Bordess'},
+                {cap: '300kg', price: '1.700.000', old: '1.950.000', img: 'img/daijin300.jpg', tag: 'Bordess'}
             ],
             renkmhe: [
-                {cap: '40kg', price: '295.000', old: '350.000', img: 'https://drive.google.com/file/d/1B3RL0XVbTQjYGrDdF_Z_7wHY09s91l7c/view?usp=drive_link'},
-                {cap: '100kg', price: '550.000', old: '650.000', img: 'https://drive.google.com/file/d/19loVxjmouBQy057OdsPZOKRXBv5bXtdP/view?usp=drive_link'},
-                {cap: '150kg', price: '825.000', old: '950.000', img: 'https://drive.google.com/file/d/1TpGeqIAQytykz0Xe5BSzC23_WW49_Sje/view?usp=drive_link'},
-                {cap: '300kg', price: '1.250.000', old: '1.400.000', img: 'https://drive.google.com/file/d/1TykVmBZCL3BOpCrlGxNBVEizLIdtcr4i/view?usp=drive_link'},
-                {cap: '600kg', price: '1.450.000', old: '1.800.000', img: 'https://drive.google.com/file/d/1MSqzBpY45clQ553M0chIk8RvG-vu0O2K/view?usp=drive_link'}
+                {cap: '40kg', price: '295.000', old: '350.000', img: 'img/renkmhe40.jpg'},
+                {cap: '100kg', price: '550.000', old: '650.000', img: 'img/renkmhe100.jpg'},
+                {cap: '150kg', price: '825.000', old: '950.000', img: 'img/renkmhe150.jpg'},
+                {cap: '300kg', price: '1.250.000', old: '1.400.000', img: 'img/renkmhe300.jpg'},
+                {cap: '500kg', price: '1.450.000', old: '1.800.000', img: 'img/renkmhe500.jpg'}
             ]
         };
 
