@@ -1,147 +1,89 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asri Java Timbangan | Distributor Resmi ALEXA, Daijin, & Renkmhe</title>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .product-card { transition: all 0.3s ease; }
-        .product-card:hover { transform: translateY(-10px); shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
-        html { scroll-behavior: smooth; }
-    </style>
+  <meta charset="UTF-8">
+  <title>Asri Java Timbangan</title>
+
+  <!-- WAJIB untuk mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO ringan -->
+  <meta name="description" content="Asri Java Timbangan membantu rekomendasi timbangan usaha dan industri sesuai kebutuhan. Konsultasi via WhatsApp.">
+
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body>
 
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <span class="text-2xl font-bold text-blue-700 uppercase tracking-tighter">Asri Java <span class="text-orange-500">Timbangan</span></span>
-            <div class="hidden md:flex space-x-8 font-bold text-sm">
-                <a href="#alexa" class="hover:text-blue-600 transition">ALEXA</a>
-                <a href="#daijin" class="hover:text-blue-600 transition">DAIJIN</a>
-                <a href="#renkmhe" class="hover:text-blue-600 transition">RENKMHE</a>
-            </div>
-            <a href="https://wa.me/6285168195956" class="bg-green-500 text-white px-5 py-2 rounded-full text-xs font-black hover:bg-green-600 transition uppercase">Chat Admin</a>
-        </div>
-    </nav>
+  <!-- HERO -->
+  <header class="hero">
+    <h1>Solusi Timbangan Usaha & Industri</h1>
+    <p>Kami bantu pilihkan timbangan yang tepat, awet, dan sesuai kebutuhan usaha Anda.</p>
 
-    <header class="bg-slate-900 text-white py-20 px-4 text-center">
-        <div class="max-w-4xl mx-auto">
-            <span class="bg-orange-500 text-white text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-widest mb-4 inline-block">Promo Terbatas 2026</span>
-            <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">Solusi Timbangan Digital <br><span class="text-blue-400">Akurat & Bergaransi</span></h1>
-            <p class="text-lg text-slate-400 mb-10">Distributor tangan pertama merk ALEXA, Daijin, dan Renkmhe. Melayani pengiriman ke seluruh Indonesia dengan harga grosir.</p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#alexa" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-bold transition">Lihat Produk</a>
-                <a href="https://wa.me/6285168195956" class="bg-white text-slate-900 px-8 py-3 rounded-xl font-bold hover:bg-gray-200 transition">Konsultasi Gratis</a>
-            </div>
-        </div>
-    </header>
-
-    <main class="max-w-6xl mx-auto py-16 px-4">
-
-        <section id="alexa" class="mb-24">
-            <div class="flex items-center mb-10 gap-4">
-                <h2 class="text-3xl font-black italic uppercase tracking-wider text-slate-800">Merk ALEXA</h2>
-                <div class="h-[2px] flex-grow bg-blue-600"></div>
-                <span class="text-blue-600 font-bold text-sm">PILIHAN TERBAIK</span>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="container-alexa"></div>
-        </section>
-
-        <section id="daijin" class="mb-24">
-            <div class="flex items-center mb-10 gap-4">
-                <h2 class="text-3xl font-black italic uppercase tracking-wider text-slate-800">Merk DAIJIN</h2>
-                <div class="h-[2px] flex-grow bg-orange-500"></div>
-                <span class="text-orange-500 font-bold text-sm">PILIHAN PALING AMAN</span>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="container-daijin"></div>
-        </section>
-
-        <section id="renkmhe" class="mb-24">
-            <div class="flex items-center mb-10 gap-4">
-                <h2 class="text-3xl font-black italic uppercase tracking-wider text-slate-800">Merk RENKMHE</h2>
-                <div class="h-[2px] flex-grow bg-green-600"></div>
-                <span class="text-green-600 font-bold text-sm">PILIHAN EKONOMIS</span>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4" id="container-renkmhe"></div>
-        </section>
-
-    </main>
-
-    <footer class="bg-slate-900 text-white py-16 px-4 text-center border-t border-slate-800">
-        <div class="max-w-2xl mx-auto">
-            <h3 class="text-2xl font-bold mb-4">Butuh Penawaran Harga Grosir?</h3>
-            <p class="text-slate-500 mb-8 text-sm">Aditya siap membantu Anda memilih timbangan yang paling sesuai dengan budget dan kebutuhan operasional Anda.</p>
-            <a href="https://wa.me/6285168195956" class="inline-flex items-center bg-green-500 hover:bg-green-600 px-8 py-4 rounded-2xl font-black text-lg transition shadow-xl">
-                <i class="fab fa-whatsapp mr-3 text-2xl"></i> Hubungi Aditya (WA)
-            </a>
-            <p class="mt-12 text-slate-600 text-xs tracking-widest uppercase">&copy; 2026 Asri Java Timbangan - Tangerang, Indonesia</p>
-        </div>
-    </footer>
-
-    <a href="https://wa.me/6285168195956" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-[100] hover:scale-110 transition">
-        <i class="fab fa-whatsapp text-2xl"></i>
+    <a class="cta" href="https://wa.me/62516i195956">
+      Konsultasi via WhatsApp
     </a>
+  </header>
 
-    <script>
-        // 1. DATA PRODUK - SILAKAN GANTI HARGA & LINK FOTO DI SINI
-        const data = {
-            alexa: [
-                {cap: '150kg', price: '2.699.000', old: '2.900.000', img: 'img/alexatma150.jpg', tag: 'Stainless'},
-                {cap: '300kg', price: '3.199.000', old: '3.650.000', img: 'img/alexatmrb300.jpg', tag: 'Bordess'},
-                {cap: '600kg', price: '3.350.000', old: '3.700.000', img: 'img/alexatmrb600.jpg', tag: 'Bordess'}
-            ],
-            daijin: [
-                {cap: '40kg', price: '445.000', old: '550.000', img: 'img/daijin40.jpg', tag: ''},
-                {cap: '100kg', price: '950.000', old: '1.100.000', img: 'img/daijin100.jpg', tag: 'Bordess'},
-                {cap: '150kg', price: '1.350.000', old: '1.550.000', img: 'img/daijin150.jpg', tag: 'Bordess'},
-                {cap: '300kg', price: '1.700.000', old: '1.950.000', img: 'img/daijin300.jpg', tag: 'Bordess'}
-            ],
-            renkmhe: [
-                {cap: '40kg', price: '295.000', old: '350.000', img: 'img/renkmhe40.jpg'},
-                {cap: '100kg', price: '550.000', old: '650.000', img: 'img/renkmhe100.jpg'},
-                {cap: '150kg', price: '825.000', old: '950.000', img: 'img/renkmhe150.jpg'},
-                {cap: '300kg', price: '1.250.000', old: '1.400.000', img: 'img/renkmhe300.jpg'},
-                {cap: '500kg', price: '1.450.000', old: '1.800.000', img: 'img/renkmhe500.jpg'}
-            ]
-        };
+  <!-- PRODUK -->
+<section class="section">
+  <h2>Jenis Timbangan Tersedia</h2>
 
-        // 2. FUNGSI RENDER
-        function renderProducts(category, targetId, colorClass) {
-            const container = document.getElementById(targetId);
-            data[category].forEach(item => {
-                container.innerHTML += `
-                    <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden product-card relative flex flex-col">
-                        ${item.tag ? `<span class="absolute top-4 right-4 bg-slate-900 text-white text-[9px] px-3 py-1 rounded-full font-black uppercase z-10">${item.tag}</span>` : ''}
-                        <img src="${item.img}" alt="${category} ${item.cap}" class="w-full h-56 object-cover bg-gray-100">
-                        <div class="p-6 flex-grow flex flex-col text-center">
-                            <h3 class="font-black text-xl uppercase mb-1">${category} ${item.cap}</h3>
-                            <div class="mb-4">
-                                <span class="text-xs text-gray-400 line-through">Rp ${item.old}</span>
-                                <p class="text-2xl font-black ${colorClass}">Rp ${item.price}</p>
-                            </div>
-                            <button onclick="kirimWA('${category.toUpperCase()}', '${item.cap}')" class="mt-auto w-full py-3 rounded-2xl font-bold bg-slate-900 text-white hover:bg-black transition text-sm">
-                                PESAN SEKARANG
-                            </button>
-                        </div>
-                    </div>
-                `;
-            });
-        }
+  <div class="product">
+    <img src="images/meja-digital.jpg" alt="Timbangan Meja Digital">
+    <p>Timbangan Meja Digital (40kg)</p>
+    <a class="btn" href="https://wa.me/62516i195956">
+      Konsultasi Tipe & Harga
+    </a>
+  </div>
 
-        // 3. JALANKAN RENDER
-        renderProducts('alexa', 'container-alexa', 'text-blue-600');
-        renderProducts('daijin', 'container-daijin', 'text-orange-600');
-        renderProducts('renkmhe', 'container-renkmhe', 'text-green-600');
+  <div class="product">
+    <img src="images/duduk-digital.jpg" alt="Timbangan Duduk Digital">
+    <p>Timbangan Duduk Digital (100–500kg)</p>
+    <a class="btn" href="https://wa.me/62516i195956">
+      Konsultasi Tipe & Harga
+    </a>
+  </div>
 
-        // 4. FUNGSI WHATSAPP
-        function kirimWA(merk, tipe) {
-            const nomorWA = "6285168195956";
-            const pesan = encodeURIComponent("Halo Aditya,\n\nSaya ingin memesan timbangan berikut:\nMerk: " + merk + "\nKapasitas: " + tipe + "\n\nBisa dibantu prosesnya?");
-            window.open("https://wa.me/" + nomorWA + "?text=" + pesan, "_blank");
-        }
-    </script>
+  <div class="product">
+    <img src="images/gantung-digital.jpg" alt="Timbangan Gantung Digital">
+    <p>Timbangan Gantung Digital</p>
+    <a class="btn" href="https://wa.me/62516i195956">
+      Konsultasi Tipe & Harga
+    </a>
+  </div>
+
+  <div class="product">
+    <img src="images/manual-analog.jpg" alt="Timbangan Manual Analog">
+    <p>Timbangan Manual / Analog</p>
+    <a class="btn" href="https://wa.me/62516i195956">
+      Konsultasi Tipe & Harga
+    </a>
+  </div>
+
+  <div class="product">
+    <img src="images/floor-scale.jpg" alt="Floor Scale">
+    <p>Floor Scale (1–3 Ton)</p>
+    <a class="btn" href="https://wa.me/62516i195956">
+      Konsultasi Tipe & Harga
+    </a>
+  </div>
+</section>
+    
+  <!-- TRUST -->
+  <section class="section trust">
+    <p>
+      Asri Java Timbangan fokus membantu UMKM, toko, dan gudang
+      mendapatkan timbangan yang sesuai kebutuhan,
+      bukan sekadar jual murah.
+    </p>
+  </section>
+
+  <!-- CTA BAWAH -->
+  <footer class="footer">
+    <a class="cta" href="https://wa.me/62516i195956">
+      Tanya Tipe & Harga Sekarang
+    </a>
+  </footer>
+
 </body>
 </html>
